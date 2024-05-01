@@ -1,0 +1,5 @@
+C:\Users\Jackie\Desktop\School\atlas-csharp\csharp-hello_world\obj\Debug\net8.0\csharp-hello_world.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jackie\Desktop\School\atlas-csharp\csharp-hello_world\obj\Debug\net8.0\csharp-hello_world.AssemblyInfoInputs.cache
+C:\Users\Jackie\Desktop\School\atlas-csharp\csharp-hello_world\obj\Debug\net8.0\csharp-hello_world.AssemblyInfo.cs
+C:\Users\Jackie\Desktop\School\atlas-csharp\csharp-hello_world\obj\Debug\net8.0\csharp-hello_world.csproj.CoreCompileInputs.cache
+C:\Users\Jackie\Desktop\School\atlas-csharp\csharp-hello_world\obj\Debug\net8.0\csharp-hello_world.sourcelink.json
