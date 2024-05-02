@@ -22,13 +22,16 @@ class List
                 Console.Write(" ");
             }
         }
-        if (size == 1)
+        if (size > 0)
+        {
+            Console.Write(" " + (size - 1));
+        }
+        else if (size == 1)
         {
             Console.Write("0");
         }
 
         Console.WriteLine();
-        Console.WriteLine("List Length: " + list.Count);
 
         return list;
     }
