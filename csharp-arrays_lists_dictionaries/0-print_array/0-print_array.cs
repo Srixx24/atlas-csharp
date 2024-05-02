@@ -8,7 +8,8 @@ class Array
 
         if (size < 0)
         {
-            Console.Write("Size cannot be negative");
+            Console.Write("Size cannot be negative$");
+            Console.WriteLine();
             return null;
         }
         else if (size == 0)
@@ -22,7 +23,7 @@ class Array
             for (int x = 0; x < size; x++)
             {
                 array[x] = x;
-                Console.Write(array[x]);
+                Console.Write(array[x] + " ");
             }
         }
         Console.WriteLine();
