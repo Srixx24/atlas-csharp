@@ -5,6 +5,11 @@ class Program
     static void Main(string[] args)
     {
         string alph = "abcdefghijklmnopqrstuvwxyz";
-        Console.WriteLine(alph);
+
+        if (!string.IsNullOrEmpty(alph))
+        {
+            alph += "\n";
+            Console.WriteLine(alph);
+        }
     }
 }
