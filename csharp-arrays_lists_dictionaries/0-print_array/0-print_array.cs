@@ -18,7 +18,7 @@ class Array
         }
         else
         {
-            int[] array = new int[size];
+            array = new int[size];
             for (int x = 0; x < size; x++)
             {
                 array[x] = x;
