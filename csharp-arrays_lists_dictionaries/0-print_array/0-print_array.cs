@@ -8,7 +8,7 @@ class Array
 
         if (size < 0)
         {
-            Console.Write("Size cannot be negative$");
+            Console.Write("Size cannot be negative");
             Console.WriteLine();
             return null;
         }
