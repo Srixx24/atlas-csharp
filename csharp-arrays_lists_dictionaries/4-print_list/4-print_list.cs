@@ -26,6 +26,10 @@ class List
         {
             Console.Write(" " + (size - 1));
         }
+        else if (size == 1)
+        {
+            Console.Write("0");
+        }
 
         Console.WriteLine("");
 
