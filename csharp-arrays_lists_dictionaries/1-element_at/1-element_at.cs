@@ -4,6 +4,10 @@ class Array
 {
     public static int elementAt(int[] array, int index)
     {
-        boop
+        if (index >= array.Length || index < 0)
+        {
+            Console.WriteLine("Index out of range");
+            return -1;
+        }
     }
 }
