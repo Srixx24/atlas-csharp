@@ -28,7 +28,6 @@ class List
         }
 
         Console.WriteLine("");
-        Console.WriteLine("List Length: " + list.Count);
 
         return list;
     }
