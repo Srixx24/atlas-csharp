@@ -31,7 +31,7 @@ class List
             Console.Write("0");
         }
 
-        Console.WriteLine("");
+        Console.WriteLine();
 
         return list;
     }
