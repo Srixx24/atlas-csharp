@@ -12,10 +12,19 @@ class List
         }
 
         List<int> list = new List<int>();
+        int last = 0;
+        
         for (int x = 0; x < size; x++)
         {
             list.Add(x);
+            Console.Write(x);
+            if (x < size - 1)
+            {
+                Console.Write(" ");
+            }
+            last = x;
         }
+        Console.Write($" {last}");
         Console.WriteLine("");
 
         return list;
