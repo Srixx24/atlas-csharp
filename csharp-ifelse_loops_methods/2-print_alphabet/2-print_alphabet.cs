@@ -8,7 +8,7 @@ class Program
 
         for (int x = 0; x < alph.Length; x++)
         {
-            Console.WriteLine(alph[x]);
+            Console.Write(alph[x]);
         }
     }
 }
