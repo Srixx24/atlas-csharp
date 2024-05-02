@@ -12,7 +12,11 @@ class Array
 
         for (int x = array.Length - 1; x >= 0; x--)
         {
-            Console.WriteLine($"{array[x]} ");
+            Console.Write(array[x]);
+            if (x > 0)
+            {
+                Console.Write(" ");
+            }
         }
         Console.WriteLine("");
     }
