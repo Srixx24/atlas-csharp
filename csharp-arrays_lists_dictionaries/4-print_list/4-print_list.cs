@@ -12,8 +12,7 @@ class List
         }
 
         List<int> list = new List<int>();
-        int last = 0;
-        
+
         for (int x = 0; x < size; x++)
         {
             list.Add(x);
@@ -22,10 +21,14 @@ class List
             {
                 Console.Write(" ");
             }
-            last = x;
         }
-        Console.Write($" {last}");
+        if (size > 0)
+        {
+            Console.Write(" " + (size - 1));
+        }
+
         Console.WriteLine("");
+        Console.WriteLine("List Length: " + list.Count);
 
         return list;
     }
