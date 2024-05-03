@@ -12,7 +12,7 @@ class List
         }
         else
         {
-            myList.Remove(index);
+            myList.RemoveRange(index, 1);
             return myList;
         }
     }
