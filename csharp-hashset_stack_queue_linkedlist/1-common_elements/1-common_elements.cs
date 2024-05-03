@@ -13,7 +13,7 @@ class List
             {         
                 if (x == y)
                 {
-                    sortedList.Add(x)
+                    sortedList.Add(x);
                 }
             }
         }
