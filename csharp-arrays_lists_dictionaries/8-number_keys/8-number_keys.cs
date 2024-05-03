@@ -4,6 +4,13 @@ class Dictionary
 {
     public static int NumberOfKeys(Dictionary<string, string> myDict)
     {
-        boop
+        int keys = 0;
+
+        foreach (KeyValuePair<string, string> pair in myDict)
+        {
+            keys++;
+        }
+
+        return keys;
     }
 }
