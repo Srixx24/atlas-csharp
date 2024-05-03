@@ -1,9 +1,19 @@
 using System;
+using System.Collections.Generic;
 
 class List
 {
     public static List<int> DeleteAt(List<int> myList, int index)
     {
-        boop
+        if(index < 0 || index >= myList.Count)
+        {
+            Console.WriteLine("Index is out of range")
+            return myList;
+        }
+        else
+        {
+            myList.remove(index);
+            return myList;
+        }
     }
 }
