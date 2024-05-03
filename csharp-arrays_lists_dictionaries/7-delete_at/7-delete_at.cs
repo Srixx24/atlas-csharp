@@ -12,7 +12,7 @@ class List
         }
         else
         {
-            myList.remove(index);
+            myList.Remove(index);
             return myList;
         }
     }
