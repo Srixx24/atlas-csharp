@@ -5,6 +5,15 @@ class List
 {
     public static int Sum(List<int> myList)
     {
-        boop
+        HashSet<int> newList = new HashSet<int>();
+        int sum = 0;
+
+        foreach (int numb in myList)
+        {
+            newList.Add(numb);
+            sum += numb;
+        }
+
+        return sum;
     }
 }
