@@ -1,9 +1,16 @@
 using System;
+using System.Collections.Generic;
 
 class Dictionary
 {
     public static Dictionary<string, int> MultiplyBy2(Dictionary<string, int> myDict)
     {
-        boop
+        Dictionary<string, int> newDict = new Dictionary<string, int>();
+
+        foreach (string key in myDict.Keys)
+        {
+            newDict.Add(pair.Key, pair.Value * 2)
+        }
+        return newDict;
     }
 }
