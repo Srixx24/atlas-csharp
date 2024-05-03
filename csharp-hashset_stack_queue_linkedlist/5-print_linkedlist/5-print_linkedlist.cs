@@ -9,7 +9,7 @@ class LList
         List<int> list = new List<int>();
         for (int x = 0; x > size; x++)
         {
-            list.add(x);
+            list.Add(x);
             Console.WriteLine(x);
         }
 
