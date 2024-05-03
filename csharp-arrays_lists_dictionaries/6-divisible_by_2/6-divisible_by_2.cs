@@ -9,7 +9,7 @@ class List
 
         for (int x = 0; x < myList.Count; x++)
         {
-            bool isDivisibleBy2 = x % 2 == 0;
+            bool isDivisibleBy2 = myList[2] % 2 == 0;
             newList.Add(isDivisibleBy2);
         }
 
