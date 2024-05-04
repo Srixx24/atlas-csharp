@@ -11,7 +11,7 @@ class LList
         {
             if (node.Value <= n)
             {
-                node = node.Next;
+                node = myLList.First;
             }
             else
             {
