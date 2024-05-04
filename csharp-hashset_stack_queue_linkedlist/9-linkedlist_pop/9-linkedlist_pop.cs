@@ -7,13 +7,13 @@ class LList
     {
         int data = myLList.First.Value;
 
-        if (myLList == 0)
+        if (myLList.Count == 0)
         {
             return 0;
         }
 
         myLList.RemoveFirst();
-        
+
         return data;
     }
 }
