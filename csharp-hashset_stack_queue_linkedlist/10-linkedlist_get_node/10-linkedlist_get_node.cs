@@ -13,11 +13,9 @@ class LList
             {
                 return val;
             }
-            else
-            {
-                return 0;
-            }
             index++;
+            
+            return 0;
         }
     }
 }
