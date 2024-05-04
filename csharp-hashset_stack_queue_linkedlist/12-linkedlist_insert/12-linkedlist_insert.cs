@@ -13,11 +13,14 @@ class LList
             {
                 node = node.Next;
             }
-        
-            myLList.AddBefore(node, n);
-            return myLList.First;
+
+            if (node != null)
+            {
+                myLList.AddBefore(node, n);
+                return myLList.First;
+            }
         }
-        
+
         myLList.AddLast(n);
         return myLList.First;
     }
