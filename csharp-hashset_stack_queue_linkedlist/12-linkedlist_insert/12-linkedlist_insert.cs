@@ -9,16 +9,15 @@ class LList
 
         if (node != null)
         {
-            if (node.Value <= n)
+            while (node != null && node.Value < n)
             {
-                node = myLList.First;
+                node = node.Next;
             }
-            else
-            {
-                myLList.AddBefore(node, n);
-                return myLList.First;
-            }
+        
+            myLList.AddBefore(node, n);
+            return myLList.First;
         }
+        
         myLList.AddLast(n);
         return myLList.First;
     }
