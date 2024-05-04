@@ -5,6 +5,13 @@ class LList
 {
     public static int Sum(LinkedList<int> myLList)
     {
-        boop
+        int x = 0;
+
+        foreach (int y in myLList)
+        {
+            x += y
+        }
+
+        return x;
     }
 }
