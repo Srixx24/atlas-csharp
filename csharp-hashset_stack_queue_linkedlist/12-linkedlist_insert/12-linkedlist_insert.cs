@@ -9,7 +9,7 @@ class LList
 
         if (node != null)
         {
-            if (node.Value < n)
+            if (node.Value =< n)
             {
                 node = node.Next;
             }
