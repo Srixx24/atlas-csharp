@@ -5,6 +5,16 @@ class LList
 {
     public static int FindNode(LinkedList<int> myLList, int value)
     {
-        boop
+        int index = 0;
+        LinkedListNode<int> node = myLList.First;
+
+        if (node.Value == value)
+            {
+                return index;
+            }
+
+        node = node.Next
+        index++;
+        return -1;
     }
 }
