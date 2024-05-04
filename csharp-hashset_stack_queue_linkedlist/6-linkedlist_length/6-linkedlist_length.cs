@@ -10,7 +10,6 @@ class LList
         foreach (int val in myLList)
         {
             elements++;
-            Console.WriteLine();
         }
         return elements;
     }
