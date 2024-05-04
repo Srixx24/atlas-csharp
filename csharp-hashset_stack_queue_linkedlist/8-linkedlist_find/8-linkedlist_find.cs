@@ -13,7 +13,7 @@ class LList
                 return index;
             }
 
-        node = node.Next
+        node = node.Next;
         index++;
         return -1;
     }
