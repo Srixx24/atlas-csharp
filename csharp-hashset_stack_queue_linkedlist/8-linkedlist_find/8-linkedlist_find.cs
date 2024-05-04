@@ -14,10 +14,9 @@ class LList
                 {
                     return index;
                 }
+            node = node.Next;
+            index++;
         }
-
-        node = node.Next;
-        index++;
 
         return -1;
     }
