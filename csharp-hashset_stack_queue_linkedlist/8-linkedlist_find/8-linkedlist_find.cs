@@ -8,13 +8,17 @@ class LList
         int index = 0;
         LinkedListNode<int> node = myLList.First;
 
-        if (node.Value == value)
-            {
-                return index;
-            }
+        foreach (int val in myLList)
+        {
+            if (node.Value == value)
+                {
+                    return index;
+                }
+        }
 
         node = node.Next;
         index++;
+
         return -1;
     }
 }
