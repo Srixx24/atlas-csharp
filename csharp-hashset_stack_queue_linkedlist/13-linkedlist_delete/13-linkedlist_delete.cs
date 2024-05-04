@@ -12,10 +12,10 @@ class LList
         {
             if (x == index)
             {
-                myLList.remove(node);
+                myLList.Remove(node);
             }
 
-            node = node.next;
+            node = node.Next;
             x++;
         }
     }
