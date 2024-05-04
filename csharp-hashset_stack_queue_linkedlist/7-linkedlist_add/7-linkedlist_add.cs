@@ -5,7 +5,7 @@ class LList
 {
     public static LinkedListNode<int> Add(LinkedList<int> myLList, int n)
     {
-        int newNode = myLList.AddFirst(n);
+        LinkedListNode<int> newNode = myLList.AddFirst(n);
         return newNode;
     }
 }
