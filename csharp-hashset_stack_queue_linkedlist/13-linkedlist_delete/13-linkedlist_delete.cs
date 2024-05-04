@@ -12,7 +12,7 @@ class LList
         {
             if (x == index)
             {
-                myLList.remove(node)
+                myLList.remove(node);
             }
 
             node = node.next;
