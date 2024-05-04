@@ -9,9 +9,9 @@ class LList
 
         if (node != null)
         {
-            if (node.value < n)
+            if (node.Value < n)
             {
-                node = node.next;
+                node = node.Next;
             }
             else
             {
