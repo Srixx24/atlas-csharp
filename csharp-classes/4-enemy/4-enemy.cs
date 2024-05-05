@@ -30,10 +30,12 @@ namespace Enemies
             return health;
         }
 
+        /// <summary> Set base name </summary>
+        private string name = "(No name)";
+
         /// <summary> Name parameters </summary>
         public string Name
         {
-            name = "(No name)";
             get { return name; }
             set { name = value; }
         }
