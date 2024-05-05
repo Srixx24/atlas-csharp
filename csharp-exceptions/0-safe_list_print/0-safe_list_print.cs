@@ -12,6 +12,7 @@ class List
             try
             {
                 Console.WriteLine(myList[x]);
+                element++;
             }
             catch
             {
