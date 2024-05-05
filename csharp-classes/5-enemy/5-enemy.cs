@@ -43,7 +43,7 @@ namespace Enemies
         /// <summary> Overrides Zombie attributes </summary>
         public override string ToString()
         {
-            return $"Zombie name:{Name} / Total health: {health}";
+            return $"Zombie Name: {Name} / Total Health: {health}";
         }
     }
 }
