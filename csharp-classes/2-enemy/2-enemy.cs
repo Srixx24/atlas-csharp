@@ -13,12 +13,15 @@ namespace Enemies
         {
             health = 0;
         }
+
+        /// <summary> Set health requirement </summary>
         public Zombie(int value)
         {
             if (value > 0)
             {
                 throw new ArgumentException("Health must be greater than or equal to 0");
             }
+             health = value;
         }
     }
 }
