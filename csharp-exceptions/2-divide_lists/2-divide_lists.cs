@@ -16,6 +16,7 @@ class List
             catch (DivideByZeroException)
             {
                 Console.WriteLine("Cannot divide by zero");
+                results.Add(0);
             }
             catch (ArgumentOutOfRangeException)
             {
