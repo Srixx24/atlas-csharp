@@ -11,7 +11,7 @@ class List
         {
             try
             {
-                Console.WriteLine(myList[element])
+                Console.WriteLine(myList[element]);
             }
             catch
             {
