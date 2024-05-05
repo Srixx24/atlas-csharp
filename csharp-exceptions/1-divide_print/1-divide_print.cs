@@ -5,9 +5,11 @@ class Int
 {
     public static void divide(int a, int b)
     {
+        int x = 0;
+
         try
         {
-            int x = (a / b);
+            x = (a / b);
         }
         catch
         {
