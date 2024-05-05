@@ -13,9 +13,12 @@ class List
             {
                 results.Add(list1[x]/list2[x]);
             }
-            catch
+            catch (DivideByZeroException)
             {
                 Console.WriteLine("Cannot divide by zero");
+            }
+            catch (ArgumentOutOfRangeException)
+            {
                 Console.WriteLine("Out of range");
             }
         }
