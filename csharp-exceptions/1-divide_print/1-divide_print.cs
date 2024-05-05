@@ -7,11 +7,11 @@ class Int
     {
         try
         {
-            int x = (a / b)
+            int x = (a / b);
         }
         catch
         {
-            Console.WriteLine("Cannot divide by zero")
+            Console.WriteLine("Cannot divide by zero");
         }
         finally
         {
