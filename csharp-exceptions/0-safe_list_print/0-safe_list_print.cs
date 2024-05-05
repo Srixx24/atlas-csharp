@@ -11,12 +11,13 @@ class List
         {
             try
             {
-                Console.WriteLine(myList[element]);
+                Console.WriteLine(myList[x]);
             }
             catch
             {
                 return element;
             }
         }
+        return element;
     }
 }
