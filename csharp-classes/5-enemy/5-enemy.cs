@@ -41,7 +41,7 @@ namespace Enemies
         }
 
         /// <summary> Overrides Zombie attributes </summary>
-        public string ToString()
+        public override string ToString()
         {
             return $"Zombie name:{Name} / Total health: {health}";
         }
