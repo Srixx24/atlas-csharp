@@ -22,6 +22,6 @@ public struct Dog
 
     public override string ToString()
     {
-        return $"Dog Name: {name} Age: {age} Owner: {owner} Rating: {rating}";
+        return $"Dog Name: {name} \n Age: {age} \n Owner: {owner} \n Rating: {rating}";
     }
 }
