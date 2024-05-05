@@ -25,7 +25,7 @@ namespace Enemies
         }
 
         /// <summary> Returns Zombie health </summary>
-        public GetHealth()
+        public int GetHealth()
         {
             return health;
         }
