@@ -5,7 +5,7 @@ class Obj
 {
     public static void Print(object myObj)
     {
-        Type info = myObj.GetType()
+        Type info = myObj.GetType();
 
         Console.WriteLine($"{info.Name} Properties");
 
