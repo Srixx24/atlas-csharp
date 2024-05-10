@@ -5,6 +5,6 @@ class Obj
 {
     public static bool IsInstanceOfArray(object obj)
     {
-        boop
+        return obj is array;
     }
 }
