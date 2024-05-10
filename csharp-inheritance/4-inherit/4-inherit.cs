@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
 
-class Dog
+class Animal
 {
-    static Void Main()
-    {
-        boop
-    }
+
+}
+
+class Dog : Animal
+{
+
 }
