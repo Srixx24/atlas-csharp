@@ -16,7 +16,7 @@ class Obj
 
         Console.WriteLine ($"{info.Name} Methods");
 
-        foreach (MethodInfo objmeth in info.GetMethod())
+        foreach (MethodInfo objmeth in info.GetMethods())
         {
             Console.WriteLine(objmeth.Name);
         }
