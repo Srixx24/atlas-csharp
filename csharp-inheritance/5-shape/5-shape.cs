@@ -5,6 +5,6 @@ class Shape
 {
     public virtual int Area()
     {
-        throw NotImplementedException("Area() is not implemented");
+        throw new NotImplementedException("Area() is not implemented");
     }
 }
