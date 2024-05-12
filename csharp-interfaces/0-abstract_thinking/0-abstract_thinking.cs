@@ -2,7 +2,7 @@ using System;
 
 abstract class bass
 {
-    public string name;
+    public string name = "";
 
     public override string ToString()
     {
