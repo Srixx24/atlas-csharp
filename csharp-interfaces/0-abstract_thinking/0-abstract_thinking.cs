@@ -1,6 +1,6 @@
 using System;
 
-abstract class bass
+abstract class Base
 {
     public string name = "";
 
