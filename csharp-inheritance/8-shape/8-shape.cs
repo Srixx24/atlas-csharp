@@ -57,7 +57,7 @@ class Rectangle : Shape
 
 class Square : Rectangle
 {
-    private int size
+    private int size;
 
     public int Size
     {
