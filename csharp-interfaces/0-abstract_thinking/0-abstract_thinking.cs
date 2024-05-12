@@ -6,6 +6,6 @@ abstract class Base
 
     public override string ToString()
     {
-        return $"{name} is a {type}";
+        return $"{name} is a {GetType().Name}";
     } 
 }
