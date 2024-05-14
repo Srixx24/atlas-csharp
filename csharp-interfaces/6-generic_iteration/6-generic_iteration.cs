@@ -144,7 +144,7 @@ class RoomObjects
 
 class Objs<T> : IEnumerable<T>
 {
-    List<T> objList = new List<T>;
+    List<T> objList = new List<T>();
 
     public void Add(newObj)
     {
