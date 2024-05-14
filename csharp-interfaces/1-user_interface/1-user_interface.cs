@@ -51,4 +51,9 @@ class TestObject : Base, IInteractive, IBreakable, ICollectable
     {
         return name;
     }
+
+    public void set_name(string value)
+    {
+        name = value;
+    }
 }
