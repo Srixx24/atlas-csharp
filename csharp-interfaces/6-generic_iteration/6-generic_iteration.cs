@@ -156,7 +156,7 @@ class Objs<T> : IEnumerable<T>
         return objList.GetEnumerator();
     }
 
-    IEnumerator IEnumerable.GetEnumerator()
+    IEnumerator<T> IEnumerable.GetEnumerator()
     {
         return this.GetEnumerator();
     }
