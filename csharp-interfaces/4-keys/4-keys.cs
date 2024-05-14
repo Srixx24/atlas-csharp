@@ -98,8 +98,8 @@ class Key : Base, ICollectable
 
     public Key(string name = "Key", bool isCollected = false)
     {
-        this.name = naem;
-        this isCollected = isCollected
+        this.name = name;
+        this isCollected = isCollected;
     }
 
     public void Collect()
