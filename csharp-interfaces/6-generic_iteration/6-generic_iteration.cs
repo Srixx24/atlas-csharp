@@ -153,10 +153,10 @@ class Objs<T> : IEnumerable<T>
 
     public IEnumerator<T> GetEnumerator()
     {
-        return objList. GetEnumerator():
+        return objList.GetEnumerator():
     }
 
-    IEnumerator IEnumerable. GetEnumerator()
+    IEnumerator IEnumerable.GetEnumerator()
     (
         return this.GetEnumerator();
     )
