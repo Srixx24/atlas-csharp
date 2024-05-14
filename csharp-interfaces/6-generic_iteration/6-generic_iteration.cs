@@ -146,7 +146,7 @@ class Objs<T> : IEnumerable<T>
 {
     List<T> objList = new List<T>();
 
-    public void Add(newObj)
+    public void Add(T newObj)
     {
         objList.Add(newObj);
     }
@@ -157,7 +157,7 @@ class Objs<T> : IEnumerable<T>
     }
 
     IEnumerator IEnumerable.GetEnumerator()
-    (
+    {
         return this.GetEnumerator();
-    )
+    }
 }
