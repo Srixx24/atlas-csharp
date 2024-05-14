@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Collections;
 
 abstract class Base
 {
@@ -156,4 +157,8 @@ class Objs<T> : IEnumerable<T>
         return objList.GetEnumerator();
     }
 
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return objList.GetEnumerator();
+    }
 }
