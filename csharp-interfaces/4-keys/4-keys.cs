@@ -106,12 +106,12 @@ class Key : Base, ICollectable
     {
         if (isCollected)
         {
-            Console.WriteLine("You have already picked up the {0}", name);
+            Console.WriteLine("You have already picked up the {0}.", name);
         }
         else
         {
             isCollected = true;
-            Console.WriteLine("You pick up the {0}", name);
+            Console.WriteLine("You pick up the {0}.", name);
         }
     }
 }
