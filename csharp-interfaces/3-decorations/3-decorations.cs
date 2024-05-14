@@ -45,7 +45,7 @@ class Decoration : Base, IInteractive, IBreakable
     public bool isQuestItem { get; set; }
     public int durability { get; set; }
 
-    public Decoration(string name = "Decoration",  int durability = 1, bool isQuestItem = false)
+    public Decoration(string name = "Decoration", int durability = 1, bool isQuestItem = false)
     {
         if (durability > 0)
         {
@@ -79,7 +79,7 @@ class Decoration : Base, IInteractive, IBreakable
         {
             Console.WriteLine("You hit the {0}. It cracks.", name);
         }
-        else if (durability = 0)
+        else if (durability == 0)
         {
             Console.WriteLine("You smash the {0}. What a mess.", name);
         }
