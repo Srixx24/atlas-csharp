@@ -31,7 +31,6 @@ class TestObject : Base, IInteractive, IBreakable, ICollectable
 {
     public int durability { get; set; }
     public bool isCollected { get; set; }
-    public string name { get; set; }
 
     public void Interact()
     {
@@ -48,9 +47,13 @@ class TestObject : Base, IInteractive, IBreakable, ICollectable
 
     }
 
-    public new string name
+    public string get_name()
     {
-        get { return base.name; }
-        set { base.name = value; }
+        return name;
+    }
+
+    public void set_name(string value)
+    {
+        name = value;
     }
 }
