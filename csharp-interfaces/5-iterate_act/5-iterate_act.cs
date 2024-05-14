@@ -126,15 +126,15 @@ class RoomObjects
             {
                 if (type == typeof(IInteractive))
                 {
-                    ((IInteractive)item)Interact();
+                    ((IInteractive)item).Interact();
                 }
                 if (type == typeof(IBreakable))
                 {
-                    ((IBreakable)item)Break();
+                    ((IBreakable)item).Break();
                 }
                 if (type == typeof(ICollectable))
                 {
-                    ((ICollectable)item)Collect();
+                    ((ICollectable)item).Collect();
                 }
             }
         }
