@@ -29,9 +29,9 @@ interface ICollectable
 
 class Door : Base, IInteractive
 {
-    public door(string name)
+    public Door(string name)
     {
-        name = "Door"
+        name = "Door";
     }
 
     public void Interact()
