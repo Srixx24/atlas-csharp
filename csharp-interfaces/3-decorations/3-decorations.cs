@@ -59,7 +59,7 @@ class Decoration : Base, IInteractive, IBreakable
 
     public void Interact()
     {
-        if (durability > 0)
+        if (durability >= 0)
         {
             Console.WriteLine("The {0} has been broken.", name);
         }
@@ -75,7 +75,7 @@ class Decoration : Base, IInteractive, IBreakable
 
     public void Break()
     {
-        if (durability < 0)
+        if (durability <= 0)
         {
             Console.WriteLine("You hit the {0}. It cracks.", name);
         }
