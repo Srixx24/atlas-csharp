@@ -85,7 +85,7 @@ class Decoration : Base, IInteractive, IBreakable
         }
         else if (durability > 0)
         {
-            Console.WriteLine("The {0} is already broken.", name)
+            Console.WriteLine("The {0} is already broken.", name);
         }
     }
 }
