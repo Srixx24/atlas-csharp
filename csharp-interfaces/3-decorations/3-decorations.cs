@@ -47,7 +47,7 @@ class Decoration : Base, IInteractive, IBreakable
 
     public Decoration(string name = "Decoration", int durability = 1, bool isQuestItem = false)
     {
-        if (durability >= 0)
+        if (durability <= 0)
         {
             throw new Exception ("Durability must be greater than 0");
         }
@@ -59,7 +59,7 @@ class Decoration : Base, IInteractive, IBreakable
 
     public void Interact()
     {
-        if (durability >= 0)
+        if (durability <= 0)
         {
             Console.WriteLine("The {0} has been broken.", name);
         }
@@ -75,7 +75,7 @@ class Decoration : Base, IInteractive, IBreakable
 
     public void Break()
     {
-        if (durability < 0)
+        if (durability > 0)
         {
             Console.WriteLine("You hit the {0}. It cracks.", name);
         }
@@ -83,7 +83,7 @@ class Decoration : Base, IInteractive, IBreakable
         {
             Console.WriteLine("You smash the {0}. What a mess.", name);
         }
-        else if (durability > 0)
+        else if (durability < 0)
         {
             Console.WriteLine("The {0} is already broken.", name);
         }
