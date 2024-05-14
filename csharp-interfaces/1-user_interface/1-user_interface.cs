@@ -47,4 +47,10 @@ class TestObject : Base, IInteractive, IBreakable, ICollectable
     {
 
     }
+
+    public new string name
+    {
+        get { return base.name; }
+        set { base.name = value; }
+    }
 }
