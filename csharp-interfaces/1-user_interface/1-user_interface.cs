@@ -47,8 +47,8 @@ class TestObject : Base, IInteractive, IBreakable, ICollectable
 
     }
 
-    public void set_name(string value)
+    public string get_name()
     {
-        name = value;
+        return name;
     }
 }
