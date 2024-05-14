@@ -75,6 +75,8 @@ class Decoration : Base, IInteractive, IBreakable
 
     public void Break()
     {
+        durability--;
+        
         if (durability > 0)
         {
             Console.WriteLine("You hit the {0}. It cracks.", name);
