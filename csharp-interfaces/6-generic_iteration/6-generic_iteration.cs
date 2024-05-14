@@ -158,6 +158,6 @@ class Objs<T> : IEnumerable<T>
 
     IEnumerator IEnumerable.GetEnumerator()
     {
-        return ((IEnumerable)objList).GetEnumerator();
+        return objList.GetEnumerator();
     }
 }
