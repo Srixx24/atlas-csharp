@@ -1,8 +1,8 @@
-using System;
+﻿using System;
 
 namespace MyMath
 {
-    public class Operations
+    public class Class1
     {
         public static int Add(int a, int b)
         {
