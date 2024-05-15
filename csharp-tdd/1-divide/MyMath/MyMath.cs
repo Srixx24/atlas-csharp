@@ -10,6 +10,11 @@ namespace MyMath
             {
                 return null;
             }
+            else (num == 0)
+            {
+                Console.WriteLine("Num cannot be 0");
+                return null;
+            }
             
         }
     }
