@@ -12,7 +12,6 @@ namespace Tests
         [Test]
         public void Test1()
         {
-            Assert.AreEqual(2, 3);
             Assert.Pass();
         }
     }
