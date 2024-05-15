@@ -12,7 +12,7 @@ namespace MyMath
             }
             else if (num == 0)
             {
-                Console.WriteLine("Num cannot be 0")
+                Console.WriteLine("Num cannot be 0");
                 return null;
             }
             else
@@ -23,7 +23,7 @@ namespace MyMath
                     {
                         matrix[x,y] = matrix[x,y] / num;
                     }
-                    return(matrix)
+                    return(matrix);
                 }
             }
         }
