@@ -6,6 +6,10 @@ namespace MyMath
     {
         public static int[,] Divide(int[,] matrix, int num)
         {
+            if (matrix == null)
+            {
+                return null;
+            }
             
         }
     }
