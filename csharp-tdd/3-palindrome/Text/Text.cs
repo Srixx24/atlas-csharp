@@ -14,10 +14,10 @@ namespace MyMath
         //    str2 = Regex.Replace(str2, "[:;,. \t\n]", "");
 
             // Reverse the cleaned string
-        //    string reverse = new string(str2.Reverse().ToArray())
+        //    string reverse = new string(str2.Reverse().ToArray());
 
             // Compare the cleaned input string with the reversed string
         //    return str2 == reverse;
-        }
+        //}
     }
 }
