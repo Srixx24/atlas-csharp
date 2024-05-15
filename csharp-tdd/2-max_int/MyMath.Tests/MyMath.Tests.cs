@@ -1,4 +1,7 @@
 using NUnit.Framework;
+using MyMath;
+using System.Collections.Generic;
+using System.IO;
 
 namespace Tests
 {
