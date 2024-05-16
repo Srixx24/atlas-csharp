@@ -20,7 +20,7 @@ namespace MyMath
         //    {
         //        for (int x = 0; x < matrix.GetLength(0); x++)
         //        {
-        //            for (int y = 0; y < matrix.GetLength(0); y++)
+        //            for (int y = 0; y < matrix.GetLength(1); y++)
         //            {
         //                matrix[x,y] = matrix[x,y] / num;
         //            }
