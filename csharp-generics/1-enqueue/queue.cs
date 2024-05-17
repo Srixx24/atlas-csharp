@@ -21,7 +21,7 @@ class Queue<T>
 
     public Node head;
     public Node tail;
-    public count;
+    public int count;
 
     public void Enqueue()
     {
