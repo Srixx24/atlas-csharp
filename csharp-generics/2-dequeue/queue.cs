@@ -41,7 +41,7 @@ class Queue<T>
         return count;
     }
 
-    public void T Dequeue()
+    public T Dequeue()
     {
         if (head == null)
         {
