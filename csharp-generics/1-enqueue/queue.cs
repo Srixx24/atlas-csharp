@@ -23,8 +23,10 @@ class Queue<T>
     public Node tail;
     public int count;
 
-    public void Enqueue()
+    public void Enqueue(T item)
     {
+        Node newNode = new Node(item);
+
         if (tail == null)
         {
             head = tail;
@@ -34,7 +36,7 @@ class Queue<T>
         count++;
     }
 
-    public void Count()
+    public int Count()
     {
         return count;
     }
