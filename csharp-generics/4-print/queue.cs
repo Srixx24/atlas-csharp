@@ -85,7 +85,7 @@ class Queue<T>
     {
         if (head == null)
         {
-            Console.WriteLine("Queue is empty")
+            Console.WriteLine("Queue is empty");
         }
         
         Node cur = head;
