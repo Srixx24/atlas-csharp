@@ -29,13 +29,13 @@ class Queue<T>
 
         if (tail == null)
         {
-            head = tail;
+            head = newNode;
             tail = newNode;
         }
         else
         {
             tail.Next = newNode;
-            tail =newNode;
+            tail = newNode;
         }
 
         count++;
