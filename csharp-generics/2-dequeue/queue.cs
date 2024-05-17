@@ -32,6 +32,11 @@ class Queue<T>
             head = tail;
             tail = newNode;
         }
+        else
+        {
+            tail.Next = newNode;
+            tail =newNode;
+        }
 
         count++;
     }
