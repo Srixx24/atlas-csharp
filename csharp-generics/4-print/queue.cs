@@ -92,8 +92,8 @@ class Queue<T>
 
         while (cur != null)
         {
-            Console.WriteLine(cur.value);
-            cur = cur.next;
+            Console.WriteLine(cur.Value);
+            cur = cur.Next;
         }
     }
 }
