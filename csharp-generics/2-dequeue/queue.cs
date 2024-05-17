@@ -41,7 +41,7 @@ class Queue<T>
         return count;
     }
 
-    public void Dequeue()
+    public void T Dequeue()
     {
         if (head == null)
         {
@@ -50,10 +50,16 @@ class Queue<T>
         }
         else
         {
-            tail.value = head.value;
-			head = head.next;
-			count--;
-			return tail.value;
+            T value = head.Value;
+            head = head.Next;
+            count--;
+
+            if (head == null)
+            {
+                tail = null;
+            }
+
+            return value;
         }
     }
 }
