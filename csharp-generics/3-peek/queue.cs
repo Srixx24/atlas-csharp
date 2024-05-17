@@ -77,7 +77,7 @@ class Queue<T>
         }
         else
         {
-            return head.value;
+            return head.Value;
         }
     }
 }
