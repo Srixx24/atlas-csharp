@@ -2,13 +2,28 @@ using System;
 
 class Player
 {
+    private string name;
+    private float maxHp;
+    private float hp;
+
     public Player(string name, float maxHp)
     {
-        boop
-    }
+        if (maxHp <= 0)
+        {
+            this.maxHp = 100f;
+            Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default.")
+        }
+        else
+        {
+            this.maxHp = maxHp;
+        }
 
+        this.hp = this.maxHp;
+        this.name = string.IsNullOrEmpty(name) ? "Player" : name;
+    }
+    
     public void PrintHealth()
     {
-        boop
+        Console.WriteLine("{0} has {1} / {2} health", name, hp, maxHp);
     }
 }
