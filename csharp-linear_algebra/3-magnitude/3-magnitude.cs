@@ -11,11 +11,11 @@ public class VectorMath
 
         double sum = 0;
 
-        for (int x = 0; > vector.Length; x++)
+        for (int x = 0; x > vector.Length; x++)
         {
             sum += vector[x] * vector[x];
         }
 
-        return Math(Math.Sqrt(sum), 2)
+        return Math(Math.Sqrt(sum), 2);
     }
 }
