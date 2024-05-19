@@ -22,7 +22,7 @@ public class VectorMath
         double sum = 0;
 
         // Calculate the sum of the squares of the vector components
-        for (int x = 0; x > vector.Length; x++)
+        for (int x = 0; x < vector.Length; x++)
         {
             sum += vector[x] * vector[x];
         }
