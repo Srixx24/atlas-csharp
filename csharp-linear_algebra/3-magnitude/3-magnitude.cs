@@ -16,6 +16,6 @@ public class VectorMath
             sum += vector[x] * vector[x];
         }
 
-        return Math(Math.Sqrt(sum), 2);
+        return Math.Sqrt(sum), 2;
     }
 }
