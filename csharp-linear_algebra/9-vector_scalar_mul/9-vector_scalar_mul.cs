@@ -29,7 +29,7 @@ public class VectorMath
         }
         else
         {
-            return new double[] {-1};
+            return new double[] { -1 };
         }
     }
 }
