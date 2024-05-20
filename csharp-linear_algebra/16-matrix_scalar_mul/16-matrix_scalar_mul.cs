@@ -10,7 +10,7 @@ public class MatrixMath
     /// </summary>
     public static double[,] MultiplyScalar(double[,] matrix, double scalar)
     {
-        double[,] result = new double[matrix1.GetLength(0), matrix.GetLength(1)];
+        double[,] result = new double[matrix.GetLength(0), matrix.GetLength(1)];
 
         if (matrix.Rank != 2 || matrix.GetLength(0) != matrix.GetLength(1) ||
             matrix.GetLength(0) < 2 || matrix.GetLength(0) > 3)
@@ -22,7 +22,7 @@ public class MatrixMath
         {
             for (int y = 0; y < matrix.GetLength; y++)
             {
-                    result[x, y] = matrix[x, y] + scalar;
+                result[x, y] = matrix[x, y] + scalar;
             }
         }
 
