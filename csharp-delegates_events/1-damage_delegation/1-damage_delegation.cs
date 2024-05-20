@@ -43,6 +43,6 @@ class Player
     public void HealDamage(float heal)
     {
         heal = Math.Max(heal, 0);
-        Console.WriteLine("{0} heals 0 HP!", this.name);
+        Console.WriteLine("{0} heals {1} HP!", this.name, heal);
     }
 }
