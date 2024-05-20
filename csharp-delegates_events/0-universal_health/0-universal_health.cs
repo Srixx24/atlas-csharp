@@ -6,11 +6,10 @@ class Player
     private float maxHp { get; set; }
     private float hp { get; set; }
 
-    public Player(string name, float maxHp)
+    public Player(string name = "Player", float maxHp = 100f)
     {
         if (maxHp <= 0)
         {
-            this.maxHp = 100f;
             Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default.");
         }
         else
@@ -19,7 +18,6 @@ class Player
         }
 
         this.hp = this.maxHp;
-        this.name = string.IsNullOrEmpty(name) ? "Player" : name;
     }
     
     public void PrintHealth()
