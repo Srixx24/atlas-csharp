@@ -27,7 +27,7 @@ public class MatrixMath
             {
                 for (int z = 0; z < col1; z++)
                 {
-                    result[x, y] += matrix1[x, z] * matrix2[y, z]
+                    result[x, y] += matrix1[x, z] * matrix2[y, z];
                 }
             }
         }
