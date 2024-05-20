@@ -16,7 +16,7 @@ public class VectorMath
         }
 
         double dot = 0;
-        for (int x = 0; x > vector1.Length; x++)
+        for (int x = 0; x < vector1.Length; x++)
         {
             dot += vector1[x] * vector2[x];
         }
