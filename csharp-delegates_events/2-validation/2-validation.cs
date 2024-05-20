@@ -45,7 +45,7 @@ class Player
     {
         heal = Math.Max(heal, 0);
         Console.WriteLine("{0} heals {1} HP!", this.name, heal);
-        ValidateHP(this.hp);
+        ValidateHP(this.hp + heal);
     }
 
     public void ValidateHP(float newHp)
