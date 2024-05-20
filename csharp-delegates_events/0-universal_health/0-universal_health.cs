@@ -18,6 +18,7 @@ class Player
         }
 
         this.hp = this.maxHp;
+        this.name = name;
     }
     
     public void PrintHealth()
