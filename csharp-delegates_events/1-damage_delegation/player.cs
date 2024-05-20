@@ -26,8 +26,6 @@ class Player
         Console.WriteLine("{0} has {1} / {2} health", this.name, this.hp, this.maxHp);
     }
 
-    delegate void CalculateHealth(float damage);
-
     public void TakeDamage(float damage)
     {
         if (damage < 0)
