@@ -37,8 +37,8 @@ class Player
         {
             Console.WriteLine("{0} takes {1} damage!", this.name, damage);
             this.hp -= damage;
-            ValidateHP(this.hp);
         }
+        ValidateHP(this.hp);
     }
 
     public void HealDamage(float heal)
