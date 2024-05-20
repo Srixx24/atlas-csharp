@@ -12,15 +12,14 @@ public class MatrixMath
     {
         double[,] result = new double[matrix.GetLength(0), matrix.GetLength(1)];
 
-        if (matrix.Rank != 2 || matrix.GetLength(0) != matrix.GetLength(1) ||
-            matrix.GetLength(0) < 2 || matrix.GetLength(0) > 3)
+        if (matrix.GetLength(0) < 2 || matrix.GetLength(0) > 3 || matrix.GetLength(1) < 2 || matrix.GetLength(1) > 3)
         {
             return new double[1,1] { {-1} };
         }
 
-        for (int x = 0; x < matrix.GetLength; x++)
+        for (int x = 0; x < matrix.GetLength(0); x++)
         {
-            for (int y = 0; y < matrix.GetLength; y++)
+            for (int y = 0; y < matrix.GetLength(1); y++)
             {
                 result[x, y] = matrix[x, y] + scalar;
             }
