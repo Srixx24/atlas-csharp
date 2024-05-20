@@ -2,9 +2,9 @@ using System;
 
 class Player
 {
-    private string name;
-    private float maxHp;
-    private float hp;
+    private string name { get; set; }
+    private float maxHp { get; set; }
+    private float hp { get; set; }
 
     public Player(string name, float maxHp)
     {
