@@ -14,17 +14,17 @@ public class MatrixMath
 
         if (matrix.GetLength(0) < 2 || matrix.GetLength(0) > 3 || matrix.GetLength(1) < 2 || matrix.GetLength(1) > 3)
         {
-            return new double[1,1] { {-1} };
+            return new double[,] { {-1} };
         }
 
         for (int x = 0; x < matrix.GetLength(0); x++)
         {
             for (int y = 0; y < matrix.GetLength(1); y++)
             {
-                result[x, y] = matrix[x, y] + scalar;
+                result[x, y] = matrix[x, y] * scalar;
             }
         }
 
         return result;
     }
-}
+} 
