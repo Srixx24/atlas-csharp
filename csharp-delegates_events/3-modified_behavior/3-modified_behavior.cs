@@ -1,15 +1,5 @@
 using System;
 
-
-public delegate float CalculateModifier(float baseValue, Modifier modifier);
-
-enum Modifier
-{
-    Weak,
-    Base,
-    Strong
-}
-
 class Player
 {
     private string name { get; set; }
@@ -64,18 +54,31 @@ class Player
     }
 }
 
-public delegate float CalculateModifier(float baseValue, Modifier modifier)
+public delegate float CalculateModifier(float baseValue, Modifier modifier);
+
+enum Modifier
+{
+    Weak,
+    Base,
+    Strong
+}
+
+public static float ApplyModifier(float baseValue, Modifier modifier)
 {
     if (modifier == Modifier.Weak)
     {
         return baseValue;
     }
-    else if (modifier == modifier.Base)
+    else if (modifier == Modifier.Base)
     {
         return baseValue;
     }
+    else if (modifier == Modifier.Strong)
+    {
+        return baseValue * 1.5f;
+    }
     else
     {
-        return baseValue * 1.5;
+        return baseValue;
     }
 }
