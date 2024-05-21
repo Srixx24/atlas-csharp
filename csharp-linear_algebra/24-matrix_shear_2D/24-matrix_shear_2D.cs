@@ -26,7 +26,7 @@ public class MatrixMath
         {
             for (int y = 0; y < 2; y++)
             {
-                if (direction = 'x')
+                if (direction == 'x')
                 {
                     result[x, y] += matrix[x, 1 - y] * factor;
                 }
