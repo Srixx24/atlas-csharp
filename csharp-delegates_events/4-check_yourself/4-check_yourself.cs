@@ -73,6 +73,7 @@ class Player
 
         this.hp = this.maxHp;
         this.name = name;
+        this.status = "{0} is ready to go!", this.name;
     }
     
     /// <summary>
@@ -110,6 +111,11 @@ class Player
         Console.WriteLine("{0} heals {1} HP!", this.name, heal);
         ValidateHP(this.hp + heal);
     }
+    
+    /// <summary>
+    /// An event that is raised when the player's health changes.
+    /// </summary>
+    public event EventHandler<CurrentHPArgs> HPCheck;
 
     /// <summary>
     /// Validates the player's health and ensures it stays within range.
@@ -117,43 +123,11 @@ class Player
     public void ValidateHP(float newHp)
     {
         this.hp = Math.Max(0, Math.Min(this.maxHp, newHp));
-    }
-
-
-
-    /// <summary>
-    /// Applies a modifier to a base value strength.
-    /// </summary>
-    public float ApplyModifier(float baseValue, Modifier modifier)
-    {
-        if (modifier == Modifier.Weak)
-        {
-            return baseValue;
-        }
-        else if (modifier == Modifier.Base)
-        {
-            return baseValue;
-        }
-        else if (modifier == Modifier.Strong)
-        {
-            return baseValue * 1.5f;
-        }
-        else
-        {
-            return baseValue;
-        }
+        OnHPCheck(new CurrentHPArgs(this.hp));
     }
 
     /// <summary>
-    /// An event that is raised when the player's health changes.
-    /// </summary>
-    public event EventHandler<CurrentHPArgs> HPCheck;
-
-    private string status = $"{name} is ready to go!";
-
-
-    /// <summary>
-    /// Checks the player's status based on their current health.
+    /// Updates the player's status based on their current health.
     /// </summary>
     private void CheckStatus(object sender, CurrentHPArgs e)
     {
@@ -179,5 +153,28 @@ class Player
         }
 
         Console.WriteLine(this.status);
+    }
+
+    /// <summary>
+    /// Applies a modifier to a base value strength.
+    /// </summary>
+    public float ApplyModifier(float baseValue, Modifier modifier)
+    {
+        if (modifier == Modifier.Weak)
+        {
+            return baseValue;
+        }
+        else if (modifier == Modifier.Base)
+        {
+            return baseValue;
+        }
+        else if (modifier == Modifier.Strong)
+        {
+            return baseValue * 1.5f;
+        }
+        else
+        {
+            return baseValue;
+        }
     }
 }
