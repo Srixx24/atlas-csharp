@@ -1,5 +1,14 @@
 using System;
 
+public delegate float CalculateModifier(float baseValue, Modifier modifier);
+
+public enum Modifier
+{
+    Weak,
+    Base,
+    Strong
+}
+
 class Player
 {
     private string name { get; set; }
@@ -52,28 +61,24 @@ class Player
     {
         this.hp = Math.Max(0, Math.Min(this.maxHp, newHp));
     }
-}
 
-public delegate float CalculateModifier(float baseValue, Modifier modifier);
-
-public enum Modifier
-{
-    Weak,
-    Base,
-    Strong
-}
-
-public static float ApplyModifier(float baseValue, Modifier modifier)
-{
-    switch (modifier)
+    public static float ApplyModifier(float baseValue, Modifier modifier)
     {
-        case Modifier.Weak:
+        if (modifier == Modifier.Weak)
+        {
             return baseValue;
-        case Modifier.Base:
+        }
+        else if (modifier == Modifier.Base)
+        {
             return baseValue;
-        case Modifier.Strong:
+        }
+        else if (modifier == Modifier.Strong)
+        {
             return baseValue * 1.5f;
-        default:
+        }
+        else
+        {
             return baseValue;
+        }
     }
 }
