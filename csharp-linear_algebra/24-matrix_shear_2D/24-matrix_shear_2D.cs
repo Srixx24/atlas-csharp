@@ -24,6 +24,8 @@ public class MatrixMath
 
         for (int x = 0; x < 2; x++)
         {
+            result[x, y] = matrix[x, y];
+            
             for (int y = 0; y < 2; y++)
             {
                 if (direction == 'x')
