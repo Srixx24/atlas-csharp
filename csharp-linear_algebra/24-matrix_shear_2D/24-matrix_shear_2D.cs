@@ -20,11 +20,11 @@ public class MatrixMath
             return new double[,] { { -1 } };
         }
 
-        double[,] result = new double[matrix.GetLength(0), matrix.GetLength(0)];
+        double[,] result = new double[matrix.GetLength(1), matrix.GetLength(0)];
 
         for (int x = 0; x < matrix.GetLength(0); x++)
         {
-            for (int y = 0; y < 2; y++)
+            for (int y = 0; y < matrix.GetLength(0); y++)
             {
                 if (direction == 'x')
                 {
