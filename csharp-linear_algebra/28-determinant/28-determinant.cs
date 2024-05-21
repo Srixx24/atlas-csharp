@@ -30,5 +30,9 @@ public class MatrixMath
 			double z = matrix[0, 2] * ((matrix[1, 0] * matrix[2, 1]) - (matrix[1, 1] * matrix[2, 0]));
 			return Math.Round((x - y + z),2);
 		}
+        else
+        {
+            return -1;
+        }
     }
 }
