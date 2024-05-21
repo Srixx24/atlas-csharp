@@ -119,6 +119,14 @@ class Player
     public event EventHandler<CurrentHPArgs> HPCheck;
 
     /// <summary>
+    /// Raises the HPCheck event.
+    /// </summary>
+    protected virtual void OnHPCheck(CurrentHPArgs e)
+    {
+        HPCheck?.Invoke(this, e);
+    }
+
+    /// <summary>
     /// Validates the player's health and ensures it stays within range.
     /// </summary>
     public void ValidateHP(float newHp)
