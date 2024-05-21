@@ -133,7 +133,7 @@ class Player
     public void ValidateHP(float newHp)
     {
         this.hp = Math.Max(0, Math.Min(this.maxHp, newHp));
-        OnCheckStatus(new CurrentHPArgs(this.newHp));
+        OnCheckStatus(new CurrentHPArgs(this.hp));
     }
 
     /// <summary>
