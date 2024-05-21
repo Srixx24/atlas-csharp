@@ -40,10 +40,9 @@ class CurrentHPArgs : EventArgs
     /// Initializes a new instance
     /// </summary>
     /// <param name="newHp">The new HP of the Player</param>
-    public CurrentHPArgs(float currentHp, float maxHp)
+    public CurrentHPArgs(float newHp)
     {
-        this.currentHp = currentHp;
-        this.maxHp = maxHp;
+        currentHp = newHp;
     }
 }
 
@@ -134,7 +133,7 @@ class Player
     public void ValidateHP(float newHp)
     {
         this.hp = Math.Max(0, Math.Min(this.maxHp, newHp));
-        OnCheckStatus(new CurrentHPArgs(this.hp, this.maxHp));
+        OnCheckStatus(new CurrentHPArgs(this.newHp));
     }
 
     /// <summary>
@@ -187,7 +186,7 @@ class Player
         {
             Console.WriteLine("Health has reached zero!");
         }
-        else if (e.currentHp < e.maxHp / 4)
+        else if (e.currentHp < this.maxHp / 4)
         {
             Console.WriteLine("Health is low!");
         }
