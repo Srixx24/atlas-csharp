@@ -10,7 +10,7 @@ public class MatrixMath
     /// </summary>
     public static double[,] Shear2D(double[,] matrix, char direction, double factor)
     {
-        if (matrix.GetLength(0) != 2 || matrix.GetLength(1) != 2)
+        if (matrix.GetLength(0) != matrix.GetLength(1))
         {
             return new double[,] { { -1 } };
         }
@@ -20,11 +20,11 @@ public class MatrixMath
             return new double[,] { { -1 } };
         }
 
-        double[,] result = new double[2, 2];
+        double[,] result = new double[matrix.GetLength(0), matrix.GetLength(0)];
 
-        for (int x = 0; x < 2; x++)
+        for (int x = 0; x < matrix.GetLength(0); x++)
         {
-            for (int y = 0; y < 2; y++)
+            for (int y = 0; y < matrix.GetLength(0); y++)
             {
                 if (direction == 'x')
                 {
