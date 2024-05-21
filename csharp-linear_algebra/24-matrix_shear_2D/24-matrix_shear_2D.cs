@@ -20,7 +20,7 @@ public class MatrixMath
             return new double[,] { { -1 } };
         }
 
-        double[,] result = new double[matrix.GetLength(0), 2];
+        double[,] result = new double[2, 2];
 
         for (int x = 0; x < 2; x++)
         {
