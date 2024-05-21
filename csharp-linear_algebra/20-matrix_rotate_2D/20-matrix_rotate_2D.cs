@@ -24,7 +24,7 @@ public class MatrixMath
         {
             for (int y = 0; y < 2; y++)
             {
-                result[x, y] = matrix[x, y] * cos - matrix[y, x] * sin;
+                result[x, y] = matrix[x, 0] * cos - matrix[y, 1] * sin;
             }
         }
 
