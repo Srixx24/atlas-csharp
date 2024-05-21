@@ -28,7 +28,7 @@ public class MatrixMath
 			double x = matrix[0, 0] * ((matrix[1, 1] * matrix[2, 2]) - (matrix[1, 2] * matrix[2, 1]));
 			double y = matrix[0, 1] * ((matrix[1, 0] * matrix[2, 2]) - (matrix[1, 2] * matrix[2, 0]));
 			double z = matrix[0, 2] * ((matrix[1, 0] * matrix[2, 1]) - (matrix[1, 1] * matrix[2, 0]));
-			return Math.Round((x - y + z),2);
+			return Math.Round((x - y + z), 2);
 		}
         else
         {
