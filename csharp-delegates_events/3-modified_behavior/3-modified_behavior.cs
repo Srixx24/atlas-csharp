@@ -65,11 +65,11 @@ class Player
 
     public delegate float CalculateModifier(float baseValue, Modifier modifier)
     {
-        if (modifier = Modifier.Weak)
+        if (modifier == Modifier.Weak)
         {
             return baseValue;
         }
-        else if (modifier = modifier.Base)
+        else if (modifier == modifier.Base)
         {
             return baseValue;
         }
