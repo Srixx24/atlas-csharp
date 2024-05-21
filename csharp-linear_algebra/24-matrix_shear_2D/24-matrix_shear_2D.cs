@@ -32,7 +32,7 @@ public class MatrixMath
                 }
                 else
                 {
-                    result[x, y] += matrix[1 - x, y] * factor
+                    result[x, y] += matrix[1 - x, y] * factor;
                 }
             }
         }
