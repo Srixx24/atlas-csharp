@@ -1,6 +1,13 @@
 using System;
 
+public delegate float CalculateModifier(float baseValue, Modifier modifier);
 
+public enum Modifier
+{
+    Weak,
+    Base,
+    Strong
+}
 
 class Player
 {
@@ -53,15 +60,6 @@ class Player
     public void ValidateHP(float newHp)
     {
         this.hp = Math.Max(0, Math.Min(this.maxHp, newHp));
-    }
-
-    public delegate float CalculateModifier(float baseValue, Modifier modifier);
-
-    public enum Modifier
-    {
-        Weak,
-        Base,
-        Strong
     }
 
     public static float ApplyModifier(float baseValue, Modifier modifier)
