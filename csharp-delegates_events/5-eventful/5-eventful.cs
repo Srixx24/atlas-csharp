@@ -40,7 +40,7 @@ class CurrentHPArgs : EventArgs
     /// Initializes a new instance
     /// </summary>
     /// <param name="newHp">The new HP of the Player</param>
-    public CurrentHPArgs(float newHp)
+    public CurrentHPArgs(float newHp, float maxHp)
     {
         this.currentHp = currentHp;
         this.maxHp = maxHp;
