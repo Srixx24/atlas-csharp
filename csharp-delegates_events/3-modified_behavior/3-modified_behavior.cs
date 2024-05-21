@@ -1,7 +1,15 @@
 using System;
 
+
+/// <summary>
+/// Delegate for calculating a modifier on a base value.
+/// </summary>
 public delegate float CalculateModifier(float baseValue, Modifier modifier);
 
+
+/// <summary>
+/// Enumeration of possible modifiers.
+/// </summary>
 public enum Modifier
 {
     Weak,
@@ -9,12 +17,20 @@ public enum Modifier
     Strong
 }
 
+
+/// <summary>
+/// Represents a player in the game.
+/// </summary>
 class Player
 {
     private string name { get; set; }
     private float maxHp { get; set; }
     private float hp { get; set; }
 
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="Player"/> class.
+    /// </summary>
     public Player(string name = "Player", float maxHp = 100f)
     {
         if (maxHp <= 0)
@@ -30,11 +46,17 @@ class Player
         this.name = name;
     }
     
+    /// <summary>
+    /// Prints the current health of the player.
+    /// </summary>
     public void PrintHealth()
     {
         Console.WriteLine("{0} has {1} / {2} health", this.name, this.hp, this.maxHp);
     }
 
+    /// <summary>
+    /// Applies damage to the player.
+    /// </summary>
     public void TakeDamage(float damage)
     {
         if (damage < 0)
@@ -50,6 +72,9 @@ class Player
         ValidateHP(this.hp);
     }
 
+    /// <summary>
+    /// Heals the player.
+    /// </summary>
     public void HealDamage(float heal)
     {
         heal = Math.Max(heal, 0);
@@ -57,11 +82,17 @@ class Player
         ValidateHP(this.hp + heal);
     }
 
+    /// <summary>
+    /// Validates the player's health and ensures it stays within range.
+    /// </summary>
     public void ValidateHP(float newHp)
     {
         this.hp = Math.Max(0, Math.Min(this.maxHp, newHp));
     }
 
+    /// <summary>
+    /// Applies a modifier to a base value strength.
+    /// </summary>
     public float ApplyModifier(float baseValue, Modifier modifier)
     {
         if (modifier == Modifier.Weak)
