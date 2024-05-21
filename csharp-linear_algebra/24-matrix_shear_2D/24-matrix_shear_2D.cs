@@ -28,11 +28,11 @@ public class MatrixMath
             {
                 if (direction == 'x')
                 {
-                    result[i, j] = matrix[i, j] + factor * matrix[i, (j + 1) % size];
+                    result[x, y] = matrix[x, y] + matrix[x, 1 - y] * factor;
                 }
                 else
                 {
-                    result[i, j] = matrix[i, j] + factor * matrix[(i + 1) % size, j];
+                    result[x, y] = matrix[x, y] + matrix[1 - x, y] * factor;
                 }
             }
         }
