@@ -26,15 +26,13 @@ public class MatrixMath
         {
             for (int y = 0; y < 2; y++)
             {
-                result[x, y] = matrix[x, y];
-                
                 if (direction == 'x')
                 {
-                    result[x, y] += matrix[x, 1 - y] * factor;
+                    result[x, y] = matrix[x, y] + matrix[x, 1 - y] * factor;
                 }
                 else
                 {
-                    result[x, y] += matrix[1 - x, y] * factor;
+                    result[x, y] = matrix[x, y] + matrix[1 - x, y] * factor;
                 }
             }
         }
