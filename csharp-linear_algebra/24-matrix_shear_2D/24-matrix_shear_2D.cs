@@ -34,10 +34,8 @@ public class MatrixMath
                 yFactor = factor;
             }
 
-            for (int y = 0; y < matrix.GetLength(1); y++)
-            {
-                result[x, y] = matrix[x, y] + xFactor * matrix[x, 1 - y] + yFactor * matrix[1 - x, y];
-            }
+            result[x, 0] = matrix[x, 0] + (xFactor * matrix[x, 1]);
+            result[x, 1] = matrix[x, 1] + (yFactor * matrix[x, 0]);
         }
 
         return result;
