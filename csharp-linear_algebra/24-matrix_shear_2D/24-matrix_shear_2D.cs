@@ -24,16 +24,19 @@ public class MatrixMath
 
         for (int x = 0; x < matrix.GetLength(0); x++)
         {
+            double xFactor = 0, yFactor = 0;
+            if (direction == 'x')
+            {
+                xFactor = factor;
+            }
+            else
+            {
+                yFactor = factor;
+            }
+
             for (int y = 0; y < matrix.GetLength(1); y++)
             {
-                if (direction == 'x')
-                {
-                    result[x, y] = matrix[x, y] + factor * matrix[x, 1 - y];
-                }
-                else
-                {
-                    result[x, y] = matrix[x, y] + factor * matrix[1 - x, y];
-                }
+                result[x, y] = matrix[x, y] + xFactor * matrix[x, 1 - y] + yFactor * matrix[1 - x, y];
             }
         }
 
