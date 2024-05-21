@@ -65,20 +65,15 @@ public enum Modifier
 
 public static float ApplyModifier(float baseValue, Modifier modifier)
 {
-    if (modifier == Modifier.Weak)
+    switch (modifier)
     {
-        return baseValue;
-    }
-    else if (modifier == Modifier.Base)
-    {
-        return baseValue;
-    }
-    else if (modifier == Modifier.Strong)
-    {
-        return baseValue * 1.5f;
-    }
-    else
-    {
-        return baseValue;
+        case Modifier.Weak:
+            return baseValue;
+        case Modifier.Base:
+            return baseValue;
+        case Modifier.Strong:
+            return baseValue * 1.5f;
+        default:
+            return baseValue;
     }
 }
