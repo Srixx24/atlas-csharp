@@ -24,15 +24,15 @@ public class MatrixMath
 
         for (int x = 0; x < matrix.GetLength(0); x++)
         {
-            for (int y = 0; y < matrix.GetLength(0); y++)
+            for (int y = 0; y < 2; y++)
             {
                 if (direction == 'x')
                 {
-                    result[x, y] = matrix[x, y] + matrix[x, 1 - y] * factor;
+                    result[x, y] = matrix[x, y] + factor * matrix[x, 1 - y];
                 }
                 else
                 {
-                    result[x, y] = matrix[x, y] + matrix[1 - x, y] * factor;
+                    result[x, y] = matrix[x, y] + factor * matrix[1 - x, y];
                 }
             }
         }
