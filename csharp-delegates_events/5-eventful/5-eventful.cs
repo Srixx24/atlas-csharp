@@ -42,7 +42,8 @@ class CurrentHPArgs : EventArgs
     /// <param name="newHp">The new HP of the Player</param>
     public CurrentHPArgs(float newHp)
     {
-        currentHp = newHp;
+        this.currentHp = currentHp;
+        this.maxHp = maxHp;
     }
 }
 
