@@ -62,20 +62,20 @@ class Player
     {
         this.hp = Math.Max(0, Math.Min(this.maxHp, newHp));
     }
+}
 
-    public delegate float CalculateModifier(float baseValue, Modifier modifier)
+public delegate float CalculateModifier(float baseValue, Modifier modifier)
+{
+    if (modifier == Modifier.Weak)
     {
-        if (modifier == Modifier.Weak)
-        {
-            return baseValue;
-        }
-        else if (modifier == modifier.Base)
-        {
-            return baseValue;
-        }
-        else
-        {
-            return baseValue * 1.5;
-        }
+        return baseValue;
+    }
+    else if (modifier == modifier.Base)
+    {
+        return baseValue;
+    }
+    else
+    {
+        return baseValue * 1.5;
     }
 }
