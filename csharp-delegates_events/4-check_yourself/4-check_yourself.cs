@@ -73,7 +73,7 @@ class Player
 
         this.hp = this.maxHp;
         this.name = name;
-        this.status = "{0} is ready to go!", this.name;
+        this.status = $"{this.name} is ready to go!";
     }
     
     /// <summary>
