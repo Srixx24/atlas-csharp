@@ -28,6 +28,6 @@ public class MatrixMath
             }
         }
 
-        return result
+        return result;
     }
 }
