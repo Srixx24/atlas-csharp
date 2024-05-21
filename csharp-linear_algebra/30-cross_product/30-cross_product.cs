@@ -3,7 +3,7 @@ using System;
 /// <summary>
 /// Provides methods for matrix mathematics.
 /// </summary>
-public class MatrixMath
+public class VectorMath
 {
     /// <summary>
     /// Calculates the cross product of two 3D vectors
