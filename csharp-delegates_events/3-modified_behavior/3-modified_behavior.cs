@@ -62,7 +62,7 @@ class Player
         this.hp = Math.Max(0, Math.Min(this.maxHp, newHp));
     }
 
-    public static float ApplyModifier(float baseValue, Modifier modifier)
+    public float ApplyModifier(float baseValue, Modifier modifier)
     {
         if (modifier == Modifier.Weak)
         {
