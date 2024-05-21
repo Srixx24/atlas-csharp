@@ -24,10 +24,10 @@ public class MatrixMath
 
         for (int x = 0; x < 2; x++)
         {
-            result[x, y] = matrix[x, y];
-            
             for (int y = 0; y < 2; y++)
             {
+                result[x, y] = matrix[x, y];
+                
                 if (direction == 'x')
                 {
                     result[x, y] += matrix[x, 1 - y] * factor;
