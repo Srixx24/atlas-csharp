@@ -18,7 +18,7 @@ public class MatrixMath
         double cos = Math.Cos(angle);
         double sin = Math.Sin(angle);
 
-        double[,] result = new double[matrix.GetLength(0), 0];
+        double[,] result = new double[2, 2];
 
         for (int x = 0; x < 2; x++)
         {
