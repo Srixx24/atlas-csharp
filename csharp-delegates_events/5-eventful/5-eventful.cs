@@ -187,7 +187,7 @@ class Player
         {
             Console.WriteLine("Health has reached zero!");
         }
-        else if (e.currentHp < this.maxHp / 4)
+        else if (e.currentHp < e.maxHp / 4)
         {
             Console.WriteLine("Health is low!");
         }
