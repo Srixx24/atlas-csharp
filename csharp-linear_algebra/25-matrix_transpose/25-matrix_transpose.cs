@@ -17,9 +17,9 @@ public class MatrixMath
 
         for (int x = 0; x < row; x++)
         {
-            for (int y = 0: y < col; y++)
+            for (int y = 0; y < col; y++)
             {
-                result[y, x] = matrix[x, y]
+                result[y, x] = matrix[x, y];
             }
         }
         return result;
