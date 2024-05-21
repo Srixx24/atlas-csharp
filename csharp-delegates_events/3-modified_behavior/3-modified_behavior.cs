@@ -56,7 +56,7 @@ class Player
 
 public delegate float CalculateModifier(float baseValue, Modifier modifier);
 
-enum Modifier
+public enum Modifier
 {
     Weak,
     Base,
