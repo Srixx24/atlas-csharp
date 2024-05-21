@@ -55,6 +55,7 @@ class Player
     private string name { get; set; }
     private float maxHp { get; set; }
     private float hp { get; set; }
+    private string status { get; set; }
 
 
     /// <summary>
@@ -73,7 +74,7 @@ class Player
 
         this.hp = this.maxHp;
         this.name = name;
-        status = $"{name} is ready to go!";
+        this.status = $"{name} is ready to go!";
     }
     
     /// <summary>
