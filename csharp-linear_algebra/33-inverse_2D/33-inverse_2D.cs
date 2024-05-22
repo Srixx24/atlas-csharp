@@ -18,10 +18,10 @@ public class MatrixMath
         double deter = matrix[0, 0] * matrix[1, 1] - matrix[0, 1] * matrix[1, 0];
 
         double[,] swapin = new double[2,2];
-        swapin[0, 0] = matrix[1, 1] / deter;
-        swapin[0, 1] = -matrix[0, 1] / deter;
-        swapin[1, 0] = -matrix[1, 0] / deter;
-        swapin[1, 1] = matrix[0, 0] / deter;
+        swapin[0, 0] = Math.Round(matrix[1, 1] / deter, 2);
+        swapin[0, 1] = Math.Round(-matrix[0, 1] / deter, 2);
+        swapin[1, 0] = Math.Round(-matrix[1, 0] / deter, 2);
+        swapin[1, 1] = Math.Round(matrix[0, 0] / deter, 2);
 
         return swapin;
     }
