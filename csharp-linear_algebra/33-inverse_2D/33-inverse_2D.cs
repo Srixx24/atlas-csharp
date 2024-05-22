@@ -21,7 +21,7 @@ public class MatrixMath
         swapin[0, 0] = matrix[1, 1] / deter;
         swapin[0, 1] = matrix[1, 0] / deter;
         swapin[1, 0] = matrix[0, 1] / deter;
-        swapin[0, 0] = matrix[0, 0] / deter;
+        swapin[1, 1] = matrix[0, 0] / deter;
 
         return swapin;
     }
