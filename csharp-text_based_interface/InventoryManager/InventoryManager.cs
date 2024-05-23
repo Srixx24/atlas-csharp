@@ -22,7 +22,9 @@ namespace InventoryManager
                     WelcomePrompt();
                 }
             }
-            
+
+        public delegate void method();
+
         public static void Initialize()
         {
             methods = new Dictionary<string, method>()
@@ -63,7 +65,7 @@ namespace InventoryManager
             Console.WriteLine("<Exit>");
         }
 
-        public static bool ClassNames(string[] args)
+        public static void ClassNames(string[] args)
         {
             foreach (var className in storage.GetClassNames())
             {
@@ -72,7 +74,7 @@ namespace InventoryManager
             return true;
         }
 
-        public static bool All(string[] args)
+        public static void All(string[] args)
         {
             if (args.Length == 1)
             {
@@ -93,7 +95,7 @@ namespace InventoryManager
             return true;
         }
 
-        public static bool Create(string[] args)
+        public static void Create(string[] args)
         {
             if (args.Length == 1)
             {
@@ -114,7 +116,7 @@ namespace InventoryManager
             return true;
         }
 
-        public static bool Show(string[] args)
+        public static void Show(string[] args)
         {
             if (args.Length == 2)
             {
@@ -142,7 +144,7 @@ namespace InventoryManager
             return true;
         }
 
-        public static bool Update(string[] args)
+        public static void Update(string[] args)
         {
             var obj = storage.GetObject(className, id);
 
@@ -164,7 +166,7 @@ namespace InventoryManager
             return true;
         }
 
-        public static bool Delete(string[] args)
+        public static void Delete(string[] args)
         {
             if (args.Length == 2)
             {
