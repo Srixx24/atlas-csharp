@@ -1,8 +1,8 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
-using InventoryLibrary;
 using System.Linq;
+using static InventoryLibrary.InventoryObject;
 
 namespace InventoryManager
 {
