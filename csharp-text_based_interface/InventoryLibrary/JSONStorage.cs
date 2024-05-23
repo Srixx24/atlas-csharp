@@ -7,7 +7,7 @@ using System.Text.Json;
 public class JSONStorage
 {
     private Dictionary<string, object> objects = new Dictionary<string, object>();
-    private fileLocat = "storage/inventory_manager.json";
+    private string fileLocat = "storage/inventory_manager.json";
 
     public void All()
     {

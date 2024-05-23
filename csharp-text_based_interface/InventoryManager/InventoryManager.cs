@@ -23,7 +23,7 @@ namespace InventoryManager
                 }
             }
             
-        private static void Initialize()
+        public static void Initialize()
         {
             methods = new Dictionary<string, method>()
             {
@@ -36,7 +36,7 @@ namespace InventoryManager
             };
         }
 
-        private static bool ProcessCommand(string command, string[] args)
+        public static bool ProcessCommand(string command, string[] args)
         {
             Delegate commandMethod;
             if (methods.TryGetValue(command, out commandMethod))
@@ -49,7 +49,7 @@ namespace InventoryManager
             }
         }
 
-        private static WelcomePrompt()
+        public static void WelcomePrompt()
         {
             Console.WriteLine("Inventory Manager");
             Console.WriteLine("-------------------------");
@@ -63,7 +63,7 @@ namespace InventoryManager
             Console.WriteLine("<Exit>");
         }
 
-        private static bool ClassNames(string[] args)
+        public static bool ClassNames(string[] args)
         {
             foreach (var className in storage.GetClassNames())
             {
@@ -72,7 +72,7 @@ namespace InventoryManager
             return true;
         }
 
-        private static bool All(string[] args)
+        public static bool All(string[] args)
         {
             if (args.Length == 1)
             {
@@ -93,7 +93,7 @@ namespace InventoryManager
             return true;
         }
 
-        private static bool Create(string[] args)
+        public static bool Create(string[] args)
         {
             if (args.Length == 1)
             {
@@ -114,7 +114,7 @@ namespace InventoryManager
             return true;
         }
 
-        private static bool Show(string[] args)
+        public static bool Show(string[] args)
         {
             if (args.Length == 2)
             {
@@ -142,7 +142,7 @@ namespace InventoryManager
             return true;
         }
 
-        private static bool Update(string[] args)
+        public static bool Update(string[] args)
         {
             var obj = storage.GetObject(className, id);
 
@@ -164,7 +164,7 @@ namespace InventoryManager
             return true;
         }
 
-        private static bool Delete(string[] args)
+        public static bool Delete(string[] args)
         {
             if (args.Length == 2)
             {
@@ -191,6 +191,6 @@ namespace InventoryManager
             }
 
             return true;
-        }    
+        }
     }
-} 
+}

@@ -10,7 +10,7 @@ public class Inventory : BaseClass
 
     public int quantity 
     {
-        get { return quantity }
-        set { quantity = value >= 0 }
+        get { return quantity };
+        set { quantity = value >= 0 };
     }
 }
