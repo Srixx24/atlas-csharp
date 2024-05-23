@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace InventoryManager
 {
-    public class Program
+    public class InventoryManager
     {
         static void Main(string[] args)
         {
