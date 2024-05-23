@@ -1,11 +1,12 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
+using InventoryLibrary;
 using System.Linq;
 
 namespace InventoryManager
 {
-    public class InventoryManager
+    public class program
     {
         static void Main(string[] args)
         {
