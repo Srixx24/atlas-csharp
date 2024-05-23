@@ -22,8 +22,7 @@ namespace InventoryManager
                     WelcomePrompt();
                 }
             }
-
-        public delegate void method();
+        }
 
         public static void Initialize()
         {
