@@ -1,4 +1,6 @@
 using System;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 /// <summary>
 /// Base class that all other classes will inherit from.
