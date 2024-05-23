@@ -1,9 +1,8 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
-using InventoryLibrary;
 
-public class InventoryManager
+public class InventoryLibrary
 {
     public class JSONStorage
     {
